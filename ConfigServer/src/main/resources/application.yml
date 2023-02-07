@@ -1,8 +1,18 @@
 spring:
-    application:
-        name: ConfigServer
     cloud:
         config:
-          server:
-server:
-    port: 7077
+            server:
+                git:
+                    uri: https://github.com/michaelhenok/SA-Project/tree/main/configServerRepo
+server.port: 8888
+
+
+
+#spring: C:\Users\alaza\Documents\config
+#    application:
+#        name: ConfigServer
+#    cloud:https://github.com/michaelhenok/SA-Project/tree/main/configServerRepo
+#        config:
+#          server:
+#server:
+#    port: 7077

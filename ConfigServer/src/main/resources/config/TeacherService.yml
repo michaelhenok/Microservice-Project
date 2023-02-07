@@ -1,8 +1,8 @@
-db:
-  host: localhost
-  port: 27017
-  name: Teachers
-
+#db:
+#  host: localhost
+#  port: 27017
+#  name: Teachers
+#
 
 
 #spring.data.mongodb.host:localhost

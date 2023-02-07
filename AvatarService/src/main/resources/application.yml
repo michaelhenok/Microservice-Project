@@ -1,0 +1,8 @@
+server:
+  port: 7081
+spring:
+  application:
+    name: AvatarService
+  config:
+    import:
+      optional:configserver:http://localhost:8888
