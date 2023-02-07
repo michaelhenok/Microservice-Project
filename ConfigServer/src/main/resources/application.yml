@@ -3,7 +3,7 @@ spring:
         config:
             server:
                 git:
-                    uri: https://github.com/michaelhenok/SA-Project/tree/main/configServerRepo
+                    uri: https://github.com/michaelhenok/SA-Project
 server.port: 8888
 
 
