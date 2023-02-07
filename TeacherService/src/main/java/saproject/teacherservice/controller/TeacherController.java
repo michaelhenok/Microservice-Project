@@ -21,15 +21,17 @@ public class TeacherController {
             return e.getMessage();
         }
     }
+
     @DeleteMapping("/delete/{id}")
     public String deleteTeacher(@PathVariable int id) {
-        try{
+        try {
             teacherService.deleteTeacher(id);
             return "Teacher deleted";
         } catch (TeacherException e) {
             return e.getMessage();
         }
     }
+
     @PutMapping("/update")
     public String updateTeacher(@RequestBody Teacher teacher) {
         try {
@@ -39,17 +41,14 @@ public class TeacherController {
             return e.getMessage();
         }
     }
+
     @GetMapping("/get/{id}")
     public String getTeacher(@PathVariable int id) {
         try {
-            teacherService.getTeacher(id);
+            return teacherService.getTeacher(id).toString();
         } catch (TeacherException e) {
             return e.getMessage();
         }
-        return teacherService.getTeacher(id).toString();
-    }
-    @GetMapping("/getAll")
-    public String getAllTeachers() {
-        return teacherService.getAllTeachers().toString();
+
     }
 }
